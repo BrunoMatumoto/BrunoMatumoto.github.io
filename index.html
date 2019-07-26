@@ -1,86 +1,345 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
   <title>Bruno Matumoto</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js/modernizr.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	
+		.navbar-default .navbar-nav>li>a {
+			color: white;
+		}
+	
+		.navbar-default .navbar-nav>li>a:hover {
+			color: #003366;
+		}
+	
+
+		.navbar-default .navbar-toggle .icon-bar {
+			background-color: #003366;
+		}
+
+
+		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+			border: 2px solid #003366;
+			color: #003366;
+			background: none;
+		}
+
+		.navbar-default .navbar-toggle {
+			border: 2px solid;
+			border-color: #003366;
+		}
+
+
+		section {
+			padding-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.box {
+			padding: 60px;
+			background: rgba(13, 28, 51, 0.93);
+			color: #ffffff;
+			margin: 50px;
+		}
+
+		div {
+			display: block;
+		}
+
+		figure img {
+			height: 5%;
+			width: 100%;
+		}
+
+		textarea {
+			height: 100%;
+			width: 100%;
+			padding: 5px 10px;
+			margin-bottom: 20px;
+			min-height: 234px;
+			resize: vertical;
+			color: black;
+		}
+
+		.form-control {
+			color: black;
+		}
+
+		.section-title {
+			margin-bottom: 20px;
+			font-size: 22px;
+			line-height: 28px;
+		}
+
+		.btn-submit {
+			border: 2px solid #7fffd4;
+			padding: 11px 16px;
+			width: auto;
+			margin: 0;
+		}
+
+		.btn, .btn-submit {
+			color: #7fffd4;
+			background: none;
+			font-size: 12px;
+			font-weight: 800;
+			text-shadow: none;
+			text-transform: uppercase;
+			display: inline-block;
+
+			vertical-align: middle;
+			width: 100%;
+			margin-bottom: 10px;	
+		}
+
+
+		.button-row {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+
+		.btn:hover {
+			border: 2px solid #003366;
+			color: #003366;
+		}
+
+		.portfolio .portfolio-item .portfolio-item-caption {
+			transition: all ease .5s;
+			opacity: 0;
+		}
+
+
+		.position-absolute {
+			position: absolute!important;
+		}
+
+		.d-flex {
+			display: flex!important;
+		}
+
+		*, ::after, ::before {
+			box-sizing:border-box;
+		}
+
+		.container {
+			max-width: 720px;
+		}
+
+		.container {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
+		.imagemFundo {
+			position: fixed;
+			top:0;
+			left: 0;
+			z-index: -99999;
+			width: 100%;
+			overflow: hidden;
+			margin: 0px;
+			padding: 0px;
+			height: 700px;
+			width: 1350px;
+		}
+		
+		.imagemFundo img {
+			width: 100%;
+		}
+		
+		#AreaHome {
+			height: 500px;
+		}
+		
+		.divide30 {
+			width: 100%;
+			height: 30px;
+		}
+
+		.caption-overlay{
+			margin-bottom: 30px;
+		}
+
+
+	</style>
 
 </head>
 
 <body>
-
-  <!-- inicio header -->
-  <header class="fixed-top">
-
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="sobre.html">Sobre Mim</a></li>
-            <li><a href="projeto.html">Projeto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- fim header -->
-
-  <!-- inicio section com fundo -->
-  <section class="hero-area bg-primary" id="parallax">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-11 mx-auto">
-          <h1 class="text-green">Design<br>Bruno Matumoto</h1>
-        </div>
-      </div>
+  	
+	
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #ff071d">
+ 	<div class="container-fluid">
+	<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+    </button>
     </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right"> 
+				<li><a href="#">Home</a></li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a>
+                    </li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#sobre">Sobre Mim</a>
+                    </li>
+				<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+                   	</li>
+			</ul>
+			</div>
+		</div>
+		</nav>
+	<section id="AreaHome"></section>
 
-    <div class="ilustra_1">
-      <a href="#apresenta">
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-      </a>
-    </div>
-  </section>
-  <!-- inicio da section com fundo -->
+<!-- portfolio section start -->
+	<section id="portfolio">
+		<div class="box">
+			<h2 class="section-title">Meu Portfólio</h2>
 
-  <!-- inicio section descricao -->
-  <section id="apresenta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto text-center">
-          <p class="font-secondary paragraph-lg text-dark">Site desenvolvido para a avaliação do processo seletivo para
-            vaga de desenvolvimento junior na empresa Basico. Escolhi o Bootstrap para fazer o desenvolvimento do site,
-            criei a página sobre mim e a página de projeto.<br>Deixo aqui o link para acessar o meu portfólio com alguns
-            trabalhos da faculdade.<br>Portfólio desenvolvido em wordpress.</p>
-          <a href="https://brunomatumoto.000webhostapp.com/" target="blank" class="btn btn-transparent">Acessar</a>
+		<div class="row">
+                    
+            <div class="col-sm-4">
+            	<div class="caption-overlay">
+            	<figure>
+            		<img src="DCR1 Foto 02.jpg" class="img-rounded">
+            	</figure>
+            	</div>
+            </div>
+
+            <div class="col-sm-4">
+            	<div class="caption-overlay">
+            	<figure>
+            		<img src="DCR1 Foto 03.jpg" class="img-rounded">
+            	</figure>
+            	</div>
+            </div>
+      
+            <div class="col-sm-4">
+            	<div class="caption-overlay">
+            	<figure>
+            		<img src="DCR1 Foto 04.jpg" class="img-rounded">
+            	</figure>
+            	</div>
+            </div>
+        	</div>
+
+
+		<div class="row">     
+            <div class="col-sm-6">
+            	<div class="caption-overlay">
+            	<figure>
+            		<img src="lata BM2.jpg" class="img-rounded">
+            	</figure>
+            	</div>
+            </div>
+
+            <div class="col-sm-6">
+            	<div class="caption-overlay">
+            	<figure>
+            		<img src="Drone Arte.jpg" class="img-rounded">
+            	</figure>
+            	</div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- fim da section descricao -->
 
-  <!-- Footer -->
-  <footer>
-    <div class="container_rodape">
-      <p class="copyright">Bruno Matumoto | brunomatumoto@globo.com</p>
-    </div>
-  </footer>
-  <!-- Footer -->
 
+	</section>
+
+
+	<section id="sobre">
+		<div class="box">
+			<h2 class="section-title">Um pouco mais sobre mim </h2>
+
+		<div class="row">
+			<div class="col-md-5 col-md-push-7 col-sm-12">
+            <figure class="frame"><img src="BrunoPort.jpg" class="img-rounded" alt="FotoBDM"></figure>
+          </div>
+
+		<div class="divide30"></div>
+
+        <div class="col-md-7 col-md-pull-5 col-sm-12"">
+            <p class="lead">Bruno Matumoto <br> Cursando Tecnologia em Produção Multimídia no Senac</p>
+
+            <p class="text-justify">Estudei Arquitetura e Urbanismo na <abbr title="Universidade Paulista">UNIP</abbr>, mas não conclui o curso. Apesar disso, tenho muitos trabalhos na área de arquitetura, fazendo maquetes eletrônicas (fotos 3D) nos programas SketchUp e 3Ds Max. </p>
+            <p class="text-justify">Fiz alguns cursos dos softwares da Adobe como Photoshop, Illustrator e InDesign. Na faculdade estou apredendo outros softwares como Adobe Premiere, Audition e Animate. </p>
+            <p class="text-justify">Esse portfólio foi desenvolvido com os conceitos aprendidos em aula sobre o Bootstrap.</p>
+        </div>
+    </div>
+	</div>
+    </section>
+
+    <section id="contato">
+		<div class="box">
+			<h2 class="section-title">Entre em contato comigo</h2>
+				<p class="text-justify">Se você gostou do que viu e quiser entrar em contato comigo, basta preencher os dados abaixo e me enviar uma mensagem. Pode ser que que eu consiga te ajudar em um futuro trabalho. Obrigado pela visita !</p>
+	
+		<div class="divide30"></div>
+
+<div class="form-container">
+<fieldset>
+<div class="row">
+    <div class="col-sm-6">
+  
+		<div class="form-group">
+      		<label for="name">Nome:</label>
+      		<input type="name" class="form-control" id="nome" placeholder="insira seu nome">
+    	</div>
+
+
+  	  	<div class="form-group">
+      		<label for="email">Email:</label>
+      		<input type="email" class="form-control" id="email" placeholder="insira seu email">
+    	</div>
+
+    	<div class="form-group">
+      		<label for="subj">Assunto:</label>
+      		<input type="subject" class="form-control" id="subject" placeholder="insira o assunto">
+    	</div>
+    </div>
+    
+	<div class="col-sm-6">
+		<div class="form-row text-area-row">
+        	<label>Mensagem:</label>
+        	<textarea name="message" class="text-area required" placeholder="insira a mensagem"></textarea>
+        </div>
+	</div>
+
+
+
+    <div class="col-md-6">
+    	<div class="button-row pull-right">
+    		<input type="submit" value="Enviar Mensagem" name="submit" class="btn btn-submit bm0">
+		</div>
+	</div>
+
+<div class="col-md-6">
+    <div class="button-row pull-left">
+        <input type="reset" value="Apagar Mensagem" name="reset" class="btn btn-submit bm0">
+        </div>
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+</section>
+
+
+	<div class="imagemFundo">
+		<img src="image01.jpg">
+		</div>
 </body>
-
 </html>
+
